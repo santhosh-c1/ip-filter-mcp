@@ -1,0 +1,25 @@
+{
+    "name": "ip-filter-mcp",
+    "version": "1.0.0",
+    "description": "MCP server for checking if an IP address is within allowed ranges",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "dev": "ts-node src/index.ts",
+        "inspect": "yarn fastmcp inspect src/index.ts"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "fastmcp": "^1.21.0",
+        "ipaddr.js": "^2.1.0",
+        "node-fetch": "^2.6.9",
+        "zod": "^3.21.4"
+    },
+    "devDependencies": {
+        "@types/node": "^18.15.11",
+        "@types/node-fetch": "^2.6.4",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.0.4"
+    }
+}
